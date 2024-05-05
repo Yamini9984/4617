@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Events - Event Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .image-wrapper {
+            flex-basis: 30%; /* Adjust as needed */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .image {
+            width: 100%;
+            height: auto;
+            max-width: 250px; /* Adjust as needed */
+            margin-bottom: 10px;
+        }
+        .image-name {
+            margin-top: 5px;
+        }
+        .submit-btn {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manage Events - Event Management System</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Types of Events</h2>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\birthday.jpg" alt="Birthday party" class="image">
+                    <div class="image-name">Birthday Party</div>
+                    <select>
+                        <option value="edit">Edit Birthday Party</option>
+                        <option value="add">Add New Birthday Party</option>
+                    </select>
+                </div>
+                <div class="image-wrapper">
+                    <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\wedding.jpg" alt="Wedding Ceremony" class="image">
+                    <div class="image-name">Wedding Ceremony</div>
+                    <select>
+                        <option value="edit">Edit Wedding Ceremony</option>
+                        <option value="add">Add New Wedding Ceremony</option>
+                    </select>
+                </div>
+                <div class="image-wrapper">
+                    <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\conference.jpg" alt="Conference" class="image">
+                    <div class="image-name">Conference</div>
+                    <select>
+                        <option value="edit">Edit Conference</option>
+                        <option value="add">Add New Conference</option>
+                    </select>
+                </div>
+                <div class="image-wrapper">
+                    <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\corparate event.jpg" alt="Corporate Event" class="image">
+                    <div class="image-name">Corporate Event</div>
+                    <select>
+                        <option value="edit">Edit Corporate Event</option>
+                        <option value="add">Add New Corporate Event</option>
+                    </select>
+                </div>
+                <div class="image-wrapper">
+                    <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\product.jpg" alt="Product Launch" class="image">
+                    <div class="image-name">Product Launch</div>
+                    <select>
+                        <option value="edit">Edit Product Launch</option>
+                        <option value="add">Add New Product Launch</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn submit-btn">Submit</button>
+        </div>
+        <div class="section">
+    <h2>Types of Food</h2>
+    <div class="image-container">
+        <div class="image-wrapper">
+            <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\veg.jpg" alt="Vegetarian" class="image">
+            <div class="image-name">Vegetarian</div>
+            <select>
+                <option value="edit">Edit Vegetarian</option>
+                <option value="add">Add New Vegetarian</option>
+            </select>
+        </div>
+        <div class="image-wrapper">
+            <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\Non-Vegetarian.jpg" alt="Non-Vegetarian" class="image">
+            <div class="image-name">Non-Vegetarian</div>
+            <select>
+                <option value="edit">Edit Non-Vegetarian</option>
+                <option value="add">Add New Non-Vegetarian</option>
+            </select>
+        </div>
+        <div class="image-wrapper">
+            <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\Vegan.webp" alt="Vegan" class="image">
+            <div class="image-name">Vegan</div>
+            <select>
+                <option value="edit">Edit Vegan</option>
+                <option value="add">Add New Vegan</option>
+            </select>
+        </div>
+    </div>
+    <a href="#" class="btn">Submit</a>
+</div>
+   <div class="section">
+    <h2>Types of Function Halls</h2>
+    <div class="image-container">
+        <div class="image-wrapper">
+            <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\Ballroom.jpg" alt="Ballroom" class="image">
+            <div class="image-name">Ballroom</div>
+            <select>
+                <option value="edit">Edit Ballroom</option>
+                <option value="add">Add New Ballroom</option>
+            </select>
+        </div>
+        <div class="image-wrapper">
+            <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\Conference Hall.webp" alt="Conference Hall" class="image">
+            <div class="image-name">Conference Hall</div>
+            <select>
+                <option value="edit">Edit Conference Hall</option>
+                <option value="add">Add New Conference Hall</option>
+            </select>
+        </div>
+        <div class="image-wrapper">
+            <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\OutdoorVenue.jpg" alt="Outdoor Venue" class="image">
+            <div class="image-name">Outdoor Venue</div>
+            <select>
+                <option value="edit">Edit Outdoor Venue</option>
+                <option value="add">Add New Outdoor Venue</option>
+            </select>
+        </div>
+      <div class="image-wrapper">
+            <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\MeetingRoom.jpg" alt="Meeting Room" class="image">
+            <div class="image-name">Meeting Room</div>
+            <select>
+                <option value="edit">Edit Meeting Room</option>
+                <option value="add">Add New Meeting Room</option>
+            </select>
+        </div>
+     <div class="image-wrapper">
+            <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\ConventionCenter.jpg" alt="Convention Center" class="image">
+            <div class="image-name">Convention Center</div>
+            <select>
+                <option value="edit">Edit Convention Center</option>
+                <option value="add">Add New Convention Center</option>
+            </select>
+        </div>
+ </div>
+    <a href="#" class="btn">Submit</a>
+</div>
+
+
+
+   <div class="section">
+    <h2>Decoration Options</h2>
+    <div class="image-container">
+        <div class="image-wrapper">
+            <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\Floral Arrangements.jpg" alt="Floral Arrangements" class="image">
+            <div class="image-name">Floral Arrangements</div>
+            <select>
+                <option value="edit">Edit Floral Arrangements</option>
+                <option value="add">Add New Floral Arrangements</option>
+            </select>
+        </div>
+        <div class="image-wrapper">
+            <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\Conference Hall.webp" alt="Balloons and Streamers" class="image">
+            <div class="image-name">Balloons and Streamers</div>
+            <select>
+                <option value="edit">Edit Balloons and Streamers</option>
+                <option value="add">Add New Balloons and Streamers</option>
+            </select>
+        </div>
+        <div class="image-wrapper">
+            <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\Lighting Effects.jpeg" alt="Lighting Effects" class="image">
+            <div class="image-name">Lighting Effects</div>
+            <select>
+                <option value="edit">Edit Lighting Effects</option>
+                <option value="add">Add New Lighting Effects</option>
+            </select>
+        </div>
+      <div class="image-wrapper">
+            <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\Theme Decor.jpg" alt="Theme Decor" class="image">
+            <div class="image-name">Theme Decor</div>
+            <select>
+                <option value="edit">Edit Theme Decor</option>
+                <option value="add">Add New Theme Decor</option>
+            </select>
+        </div>
+     <div class="image-wrapper">
+            <img src="C:\Users\Katti Yamini\OneDrive\Documents\4617\Table Centerpieces.jpg" alt="Table Centerpieces" class="image">
+            <div class="image-name">Table Centerpieces</div>
+            <select>
+                <option value="edit">Edit Table Centerpieces</option>
+                <option value="add">Add New Table Centerpieces</option>
+            </select>
+        </div>
+ </div>
+    <a href="#" class="btn">Submit</a>
+</div>
+
+</body>
+</html>

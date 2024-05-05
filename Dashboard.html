@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+        .card h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Event Management Dashboard</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Total Events</h2>
+            <p>100</p>
+        </div>
+        <div class="card">
+            <h2>Upcoming Events</h2>
+            <p>20</p>
+        </div>
+        <div class="card">
+            <h2>Completed Events</h2>
+            <p>80</p>
+        </div>
+        <div class="card">
+            <h2>Revenue</h2>
+            <p>$5000</p>
+        </div>
+        <div class="card">
+            <h2>New Bookings</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Type of Booking</th>
+                        <th>Phone Number</th>
+                        <th>Email ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>123456</td>
+                        <td>Conference</td>
+                        <td>123-456-7890</td>
+                        <td>example@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>654321</td>
+                        <td>Wedding</td>
+                        <td>987-654-3210</td>
+                        <td>test@test.com</td>
+                    </tr>
+                    <!-- Add more rows for additional bookings -->
+                </tbody>
+            </table>
+        </div>
+        <div class="card">
+            <h2>Event Distribution</h2>
+            <canvas id="eventChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // Sample data for the pie chart
+        const eventData = {
+            labels: ['Conference', 'Wedding', 'Party', 'Workshop'],
+            datasets: [{
+                data: [20, 30, 25, 25], // Sample data, you can replace this with your actual data
+                backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0']
+            }]
+        };
+
+        // Initialize the pie chart
+        const eventChart = new Chart(document.getElementById('eventChart'), {
+            type: 'pie',
+            data: eventData
+        });
+    </script>
+</body>
+</html>
